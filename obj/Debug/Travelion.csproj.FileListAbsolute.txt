@@ -1,0 +1,9 @@
+c:\users\arek\documents\visual studio 2017\Projects\Travelion\Travelion\bin\Debug\Travelion.exe.config
+c:\users\arek\documents\visual studio 2017\Projects\Travelion\Travelion\bin\Debug\Travelion.exe
+c:\users\arek\documents\visual studio 2017\Projects\Travelion\Travelion\bin\Debug\Travelion.pdb
+c:\users\arek\documents\visual studio 2017\Projects\Travelion\Travelion\obj\Debug\Travelion.csprojResolveAssemblyReference.cache
+c:\users\arek\documents\visual studio 2017\Projects\Travelion\Travelion\obj\Debug\Travelion.Form1.resources
+c:\users\arek\documents\visual studio 2017\Projects\Travelion\Travelion\obj\Debug\Travelion.Properties.Resources.resources
+c:\users\arek\documents\visual studio 2017\Projects\Travelion\Travelion\obj\Debug\Travelion.csproj.GenerateResource.Cache
+c:\users\arek\documents\visual studio 2017\Projects\Travelion\Travelion\obj\Debug\Travelion.exe
+c:\users\arek\documents\visual studio 2017\Projects\Travelion\Travelion\obj\Debug\Travelion.pdb

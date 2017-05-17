@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.opcjeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pomocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,6 +53,13 @@
             this.label_Muzea = new System.Windows.Forms.Label();
             this.trackBar_Muzea = new System.Windows.Forms.TrackBar();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.checkBox_All = new System.Windows.Forms.CheckBox();
+            this.checkBox_Europe = new System.Windows.Forms.CheckBox();
+            this.checkBox_SAmerica = new System.Windows.Forms.CheckBox();
+            this.checkBox_NAmerica = new System.Windows.Forms.CheckBox();
+            this.checkBox_Africa = new System.Windows.Forms.CheckBox();
+            this.checkBox_Asia = new System.Windows.Forms.CheckBox();
+            this.checkBox_Australia = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_Wyniki)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_Imprezy)).BeginInit();
@@ -98,14 +105,14 @@
             // 
             // chart_Wyniki
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart_Wyniki.ChartAreas.Add(chartArea1);
+            chartArea2.Name = "ChartArea1";
+            this.chart_Wyniki.ChartAreas.Add(chartArea2);
             this.chart_Wyniki.Location = new System.Drawing.Point(285, 38);
             this.chart_Wyniki.Name = "chart_Wyniki";
             this.chart_Wyniki.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            series1.ChartArea = "ChartArea1";
-            series1.Name = "Zdobyte Punkty";
-            this.chart_Wyniki.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Name = "Zdobyte Punkty";
+            this.chart_Wyniki.Series.Add(series2);
             this.chart_Wyniki.Size = new System.Drawing.Size(431, 334);
             this.chart_Wyniki.TabIndex = 1;
             this.chart_Wyniki.Text = "chart1";
@@ -284,11 +291,89 @@
             this.trackBar_Muzea.TabIndex = 16;
             this.trackBar_Muzea.Value = 1;
             // 
+            // checkBox_All
+            // 
+            this.checkBox_All.AutoSize = true;
+            this.checkBox_All.Location = new System.Drawing.Point(304, 392);
+            this.checkBox_All.Name = "checkBox_All";
+            this.checkBox_All.Size = new System.Drawing.Size(101, 17);
+            this.checkBox_All.TabIndex = 18;
+            this.checkBox_All.Text = "Wszystkie Kraje";
+            this.checkBox_All.UseVisualStyleBackColor = true;
+            this.checkBox_All.CheckedChanged += new System.EventHandler(this.checkBox_All_CheckedChanged);
+            // 
+            // checkBox_Europe
+            // 
+            this.checkBox_Europe.AutoSize = true;
+            this.checkBox_Europe.Location = new System.Drawing.Point(411, 392);
+            this.checkBox_Europe.Name = "checkBox_Europe";
+            this.checkBox_Europe.Size = new System.Drawing.Size(60, 17);
+            this.checkBox_Europe.TabIndex = 19;
+            this.checkBox_Europe.Text = "Europa";
+            this.checkBox_Europe.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_SAmerica
+            // 
+            this.checkBox_SAmerica.AutoSize = true;
+            this.checkBox_SAmerica.Location = new System.Drawing.Point(496, 418);
+            this.checkBox_SAmerica.Name = "checkBox_SAmerica";
+            this.checkBox_SAmerica.Size = new System.Drawing.Size(127, 17);
+            this.checkBox_SAmerica.TabIndex = 21;
+            this.checkBox_SAmerica.Text = "Ameryka Południowa";
+            this.checkBox_SAmerica.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_NAmerica
+            // 
+            this.checkBox_NAmerica.AutoSize = true;
+            this.checkBox_NAmerica.Location = new System.Drawing.Point(496, 392);
+            this.checkBox_NAmerica.Name = "checkBox_NAmerica";
+            this.checkBox_NAmerica.Size = new System.Drawing.Size(117, 17);
+            this.checkBox_NAmerica.TabIndex = 20;
+            this.checkBox_NAmerica.Text = "Ameryka Północna";
+            this.checkBox_NAmerica.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_Africa
+            // 
+            this.checkBox_Africa.AutoSize = true;
+            this.checkBox_Africa.Location = new System.Drawing.Point(619, 418);
+            this.checkBox_Africa.Name = "checkBox_Africa";
+            this.checkBox_Africa.Size = new System.Drawing.Size(56, 17);
+            this.checkBox_Africa.TabIndex = 23;
+            this.checkBox_Africa.Text = "Afryka";
+            this.checkBox_Africa.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_Asia
+            // 
+            this.checkBox_Asia.AutoSize = true;
+            this.checkBox_Asia.Location = new System.Drawing.Point(411, 418);
+            this.checkBox_Asia.Name = "checkBox_Asia";
+            this.checkBox_Asia.Size = new System.Drawing.Size(46, 17);
+            this.checkBox_Asia.TabIndex = 22;
+            this.checkBox_Asia.Text = "Azja";
+            this.checkBox_Asia.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_Australia
+            // 
+            this.checkBox_Australia.AutoSize = true;
+            this.checkBox_Australia.Location = new System.Drawing.Point(619, 392);
+            this.checkBox_Australia.Name = "checkBox_Australia";
+            this.checkBox_Australia.Size = new System.Drawing.Size(66, 17);
+            this.checkBox_Australia.TabIndex = 24;
+            this.checkBox_Australia.Text = "Australia";
+            this.checkBox_Australia.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(720, 447);
+            this.Controls.Add(this.checkBox_Australia);
+            this.Controls.Add(this.checkBox_Africa);
+            this.Controls.Add(this.checkBox_Asia);
+            this.Controls.Add(this.checkBox_SAmerica);
+            this.Controls.Add(this.checkBox_NAmerica);
+            this.Controls.Add(this.checkBox_Europe);
+            this.Controls.Add(this.checkBox_All);
             this.Controls.Add(this.label_Muzea);
             this.Controls.Add(this.trackBar_Muzea);
             this.Controls.Add(this.button2);
@@ -350,6 +435,13 @@
         private System.Windows.Forms.TrackBar trackBar_Muzea;
         private System.Windows.Forms.BindingSource bindingSource1;
         public System.Windows.Forms.DataVisualization.Charting.Chart chart_Wyniki;
+        public System.Windows.Forms.CheckBox checkBox_All;
+        public System.Windows.Forms.CheckBox checkBox_Europe;
+        public System.Windows.Forms.CheckBox checkBox_SAmerica;
+        public System.Windows.Forms.CheckBox checkBox_NAmerica;
+        public System.Windows.Forms.CheckBox checkBox_Africa;
+        public System.Windows.Forms.CheckBox checkBox_Asia;
+        public System.Windows.Forms.CheckBox checkBox_Australia;
     }
 }
 

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.opcjeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pomocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -105,14 +105,14 @@
             // 
             // chart_Wyniki
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart_Wyniki.ChartAreas.Add(chartArea2);
+            chartArea1.Name = "ChartArea1";
+            this.chart_Wyniki.ChartAreas.Add(chartArea1);
             this.chart_Wyniki.Location = new System.Drawing.Point(285, 38);
             this.chart_Wyniki.Name = "chart_Wyniki";
             this.chart_Wyniki.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            series2.ChartArea = "ChartArea1";
-            series2.Name = "Zdobyte Punkty";
-            this.chart_Wyniki.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Name = "Zdobyte Punkty";
+            this.chart_Wyniki.Series.Add(series1);
             this.chart_Wyniki.Size = new System.Drawing.Size(431, 334);
             this.chart_Wyniki.TabIndex = 1;
             this.chart_Wyniki.Text = "chart1";
@@ -268,6 +268,7 @@
             this.button2.TabIndex = 15;
             this.button2.Text = "Dej mie oferty!";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label_Muzea
             // 

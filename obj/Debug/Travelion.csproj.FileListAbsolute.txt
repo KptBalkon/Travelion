@@ -7,3 +7,4 @@ c:\users\arek\documents\visual studio 2017\Projects\Travelion\Travelion\obj\Debu
 c:\users\arek\documents\visual studio 2017\Projects\Travelion\Travelion\obj\Debug\Travelion.csproj.GenerateResource.Cache
 c:\users\arek\documents\visual studio 2017\Projects\Travelion\Travelion\obj\Debug\Travelion.exe
 c:\users\arek\documents\visual studio 2017\Projects\Travelion\Travelion\obj\Debug\Travelion.pdb
+C:\Users\Arek\documents\visual studio 2017\Projects\Travelion\Travelion\obj\Debug\Travelion.Form2.resources

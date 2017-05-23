@@ -60,6 +60,7 @@
             this.checkBox_Africa = new System.Windows.Forms.CheckBox();
             this.checkBox_Asia = new System.Windows.Forms.CheckBox();
             this.checkBox_Australia = new System.Windows.Forms.CheckBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_Wyniki)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_Imprezy)).BeginInit();
@@ -79,7 +80,7 @@
             this.pomocToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(720, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(759, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -363,11 +364,22 @@
             this.checkBox_Australia.Text = "Australia";
             this.checkBox_Australia.UseVisualStyleBackColor = true;
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(24, 439);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(126, 41);
+            this.button5.TabIndex = 27;
+            this.button5.Text = "Edytuj Kraje";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(720, 447);
+            this.ClientSize = new System.Drawing.Size(759, 517);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.checkBox_Australia);
             this.Controls.Add(this.checkBox_Africa);
             this.Controls.Add(this.checkBox_Asia);
@@ -443,6 +455,7 @@
         public System.Windows.Forms.CheckBox checkBox_Africa;
         public System.Windows.Forms.CheckBox checkBox_Asia;
         public System.Windows.Forms.CheckBox checkBox_Australia;
+        private System.Windows.Forms.Button button5;
     }
 }
 

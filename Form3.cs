@@ -45,7 +45,9 @@ namespace Travelion
 
         private void button2_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog1 = new OpenFileDialog();                                                 
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            openFileDialog1.DefaultExt = "xml";
+            openFileDialog1.Filter = "XML Files (*.xml)|*.xml";
             if (openFileDialog1.ShowDialog() == DialogResult.OK)                //Nakierowuję na plik za pomocą dialogu (Odpalam w ifie jak profesjonalista :3)
             {
                 FileStream stream = File.OpenRead(openFileDialog1.FileName);         //Tworzymy strumień danych OpenRead otwierający nasz output file

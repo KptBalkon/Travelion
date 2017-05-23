@@ -103,5 +103,18 @@ namespace Travelion
             }
             
         }
+
+        private void Form3_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (Form1._Form1.Countries.Any())
+            {
+                Form1._Form1.button1.Enabled = true;
+            }
+            else
+            {
+                Form1._Form1.button1.Enabled = false;
+                Form1._Form1.button2.Enabled = false;
+            }
+        }
     }
 }

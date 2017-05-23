@@ -84,6 +84,7 @@
             // 
             // checkedListBox1
             // 
+            this.checkedListBox1.CheckOnClick = true;
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Location = new System.Drawing.Point(140, 12);
             this.checkedListBox1.Name = "checkedListBox1";
@@ -103,6 +104,7 @@
             this.Name = "Form3";
             this.Text = "Form3";
             this.Activated += new System.EventHandler(this.Form3_Activated);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form3_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.countryBindingSource)).EndInit();
             this.ResumeLayout(false);
 

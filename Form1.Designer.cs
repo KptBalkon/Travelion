@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.opcjeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pomocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -106,14 +106,14 @@
             // 
             // chart_Wyniki
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart_Wyniki.ChartAreas.Add(chartArea1);
+            chartArea3.Name = "ChartArea1";
+            this.chart_Wyniki.ChartAreas.Add(chartArea3);
             this.chart_Wyniki.Location = new System.Drawing.Point(285, 38);
             this.chart_Wyniki.Name = "chart_Wyniki";
             this.chart_Wyniki.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            series1.ChartArea = "ChartArea1";
-            series1.Name = "Zdobyte Punkty";
-            this.chart_Wyniki.Series.Add(series1);
+            series3.ChartArea = "ChartArea1";
+            series3.Name = "Zdobyte Punkty";
+            this.chart_Wyniki.Series.Add(series3);
             this.chart_Wyniki.Size = new System.Drawing.Size(431, 334);
             this.chart_Wyniki.TabIndex = 1;
             this.chart_Wyniki.Text = "chart1";
@@ -252,6 +252,7 @@
             // 
             // button1
             // 
+            this.button1.Enabled = false;
             this.button1.Location = new System.Drawing.Point(24, 392);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 41);
@@ -442,8 +443,6 @@
         private System.Windows.Forms.Label label_Pobyt;
         private System.Windows.Forms.Label label_Cena;
         private System.Windows.Forms.Label label_Cywilizacja;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label_Muzea;
         private System.Windows.Forms.TrackBar trackBar_Muzea;
         private System.Windows.Forms.BindingSource bindingSource1;
@@ -456,6 +455,8 @@
         public System.Windows.Forms.CheckBox checkBox_Asia;
         public System.Windows.Forms.CheckBox checkBox_Australia;
         private System.Windows.Forms.Button button5;
+        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button button2;
     }
 }
 

@@ -56,9 +56,6 @@ namespace Travelion
                 stream.Close();
             }
 
-
-
-
             checkedListBox1.Items.Clear();
 
             foreach (Country country in Form1._Form1.Countries)

@@ -40,9 +40,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Location = new System.Drawing.Point(21, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 27);
+            this.button1.Size = new System.Drawing.Size(80, 80);
             this.button1.TabIndex = 0;
             this.button1.Text = "Zapisz do XML";
             this.button1.UseVisualStyleBackColor = true;
@@ -50,9 +50,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 45);
+            this.button2.Location = new System.Drawing.Point(21, 98);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(122, 27);
+            this.button2.Size = new System.Drawing.Size(80, 80);
             this.button2.TabIndex = 1;
             this.button2.Text = "Wczytaj z XML";
             this.button2.UseVisualStyleBackColor = true;
@@ -60,9 +60,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(12, 78);
+            this.button3.Location = new System.Drawing.Point(21, 184);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(122, 27);
+            this.button3.Size = new System.Drawing.Size(80, 80);
             this.button3.TabIndex = 2;
             this.button3.Text = "Dodaj kraj";
             this.button3.UseVisualStyleBackColor = true;
@@ -70,9 +70,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(12, 111);
+            this.button4.Location = new System.Drawing.Point(21, 270);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(122, 27);
+            this.button4.Size = new System.Drawing.Size(80, 80);
             this.button4.TabIndex = 3;
             this.button4.Text = "Usuń wybrane kraje";
             this.button4.UseVisualStyleBackColor = true;
@@ -86,16 +86,16 @@
             // 
             this.checkedListBox1.CheckOnClick = true;
             this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(140, 12);
+            this.checkedListBox1.Location = new System.Drawing.Point(107, 12);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(135, 454);
+            this.checkedListBox1.Size = new System.Drawing.Size(135, 334);
             this.checkedListBox1.TabIndex = 4;
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(283, 478);
+            this.ClientSize = new System.Drawing.Size(263, 359);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);

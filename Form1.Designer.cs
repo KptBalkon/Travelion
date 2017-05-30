@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.opcjeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wyjdźToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pomocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oProgramieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chart_Wyniki = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -80,15 +81,24 @@
             this.pomocToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(759, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(735, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // opcjeToolStripMenuItem
             // 
+            this.opcjeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.wyjdźToolStripMenuItem});
             this.opcjeToolStripMenuItem.Name = "opcjeToolStripMenuItem";
             this.opcjeToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.opcjeToolStripMenuItem.Text = "Opcje";
+            // 
+            // wyjdźToolStripMenuItem
+            // 
+            this.wyjdźToolStripMenuItem.Name = "wyjdźToolStripMenuItem";
+            this.wyjdźToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
+            this.wyjdźToolStripMenuItem.Text = "Wyjdź";
+            this.wyjdźToolStripMenuItem.Click += new System.EventHandler(this.wyjdźToolStripMenuItem_Click);
             // 
             // pomocToolStripMenuItem
             // 
@@ -103,17 +113,18 @@
             this.oProgramieToolStripMenuItem.Name = "oProgramieToolStripMenuItem";
             this.oProgramieToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.oProgramieToolStripMenuItem.Text = "O programie";
+            this.oProgramieToolStripMenuItem.Click += new System.EventHandler(this.oProgramieToolStripMenuItem_Click);
             // 
             // chart_Wyniki
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart_Wyniki.ChartAreas.Add(chartArea3);
+            chartArea1.Name = "ChartArea1";
+            this.chart_Wyniki.ChartAreas.Add(chartArea1);
             this.chart_Wyniki.Location = new System.Drawing.Point(285, 38);
             this.chart_Wyniki.Name = "chart_Wyniki";
             this.chart_Wyniki.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            series3.ChartArea = "ChartArea1";
-            series3.Name = "Zdobyte Punkty";
-            this.chart_Wyniki.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.Name = "Zdobyte Punkty";
+            this.chart_Wyniki.Series.Add(series1);
             this.chart_Wyniki.Size = new System.Drawing.Size(431, 334);
             this.chart_Wyniki.TabIndex = 1;
             this.chart_Wyniki.Text = "chart1";
@@ -255,7 +266,7 @@
             this.button1.Enabled = false;
             this.button1.Location = new System.Drawing.Point(24, 392);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 41);
+            this.button1.Size = new System.Drawing.Size(80, 80);
             this.button1.TabIndex = 14;
             this.button1.Text = "Powiedz gdzie jechać!";
             this.button1.UseVisualStyleBackColor = true;
@@ -264,9 +275,9 @@
             // button2
             // 
             this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(161, 392);
+            this.button2.Location = new System.Drawing.Point(110, 392);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(126, 41);
+            this.button2.Size = new System.Drawing.Size(80, 80);
             this.button2.TabIndex = 15;
             this.button2.Text = "Dej mie oferty!";
             this.button2.UseVisualStyleBackColor = true;
@@ -338,7 +349,7 @@
             // checkBox_Africa
             // 
             this.checkBox_Africa.AutoSize = true;
-            this.checkBox_Africa.Location = new System.Drawing.Point(619, 418);
+            this.checkBox_Africa.Location = new System.Drawing.Point(411, 444);
             this.checkBox_Africa.Name = "checkBox_Africa";
             this.checkBox_Africa.Size = new System.Drawing.Size(56, 17);
             this.checkBox_Africa.TabIndex = 23;
@@ -358,7 +369,7 @@
             // checkBox_Australia
             // 
             this.checkBox_Australia.AutoSize = true;
-            this.checkBox_Australia.Location = new System.Drawing.Point(619, 392);
+            this.checkBox_Australia.Location = new System.Drawing.Point(496, 444);
             this.checkBox_Australia.Name = "checkBox_Australia";
             this.checkBox_Australia.Size = new System.Drawing.Size(66, 17);
             this.checkBox_Australia.TabIndex = 24;
@@ -367,9 +378,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(24, 439);
+            this.button5.Location = new System.Drawing.Point(196, 392);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(126, 41);
+            this.button5.Size = new System.Drawing.Size(80, 80);
             this.button5.TabIndex = 27;
             this.button5.Text = "Edytuj Kraje";
             this.button5.UseVisualStyleBackColor = true;
@@ -379,7 +390,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(759, 517);
+            this.ClientSize = new System.Drawing.Size(735, 488);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.checkBox_Australia);
             this.Controls.Add(this.checkBox_Africa);
@@ -457,6 +468,7 @@
         private System.Windows.Forms.Button button5;
         public System.Windows.Forms.Button button1;
         public System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ToolStripMenuItem wyjdźToolStripMenuItem;
     }
 }
 

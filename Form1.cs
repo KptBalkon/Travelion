@@ -141,6 +141,16 @@ namespace Travelion
             Form3 thirdForm = new Form3(); // Tworzymy za każdym razem nową. Wciśnięcie "X" usuwa nam ten obiekt (tak O_o)
             thirdForm.Show();
         }
+
+        private void oProgramieToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Travelion\n\nProgram do planowania podroży międzykrajowych\n\nCopyright KptBalkon 2017", "O Programie");
+        }
+
+        private void wyjdźToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ActiveForm.Close();
+        }
     }
 
     public class Country
